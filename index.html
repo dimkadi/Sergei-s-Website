@@ -17,18 +17,45 @@
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
       <link rel="manifest" href="/site.webmanifest">
     <style>
+      @keyframes blink {
+        0% {
+          background: rgb(130, 245, 174);
+        }
+        15% {
+          background: indigo;
+        }
+        30% {
+          background: blue;
+        }
+        42% {
+          background: green;
+        }
+        58% {
+          background: yellow;
+        }
+        70% {
+          background: orange;
+        }
+        85% {
+          background: red;
+        }
+        100% {
+          background: violet;
+        }
+
+      }
       .rounded-image {
         width: 45%;
         border-radius: 50%;
         box-shadow: 0 0 10px rgba(26, 9, 9, 0.4);
         padding: 0.12em;
         margin-bottom:0.5em;
+        animation: blink 10s infinite;
       }
       .fw-light {
         font-family: fantasy;
         text-shadow: 0 0 10px rgba(52, 185, 3, 0.4);
-
-      }
+              }
 
     </style>
   </head>
@@ -64,7 +91,7 @@
     </nav>
     <div class="container text-center my-5">
       <div class="row">
-        <div class="col-lg-8 col-md-8 mx-auto">
+        <div class="col-lg-9 col-md-8 mx-auto">
           <img
             class="rounded-image"
             src="TheArtist.png"
